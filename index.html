@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <script src="index.js"></script>
+    <head> lison create </head>
+    
+    <body>
+<form id="loginForm" action="/login" method="POST">
+    <input type="text" id="username" name="username"
+    placeholder="Username"></input>
+    <input type="password" id="password" name="password"
+    placeholder="Password"></input>
+    <button type="submit">Login</button>
+ </form>
+
+ <script>
+    document.addEventlistener("DOMContentLoaded", function (){
+        const loginForm = document.getElementById("loginForm");
+
+        loginForm.addEventListener("submit", function (e){
+            e.preventDefault();
+            window.location.href = "landing-page.html"
+        });
+    });
+ </script>
+
+ </body>
+
+</html>
