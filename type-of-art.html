@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" type="text/css" href="all-button-files.css"
+
     <head>
         <title>Types of Art</title>
     </head>
     <body>
         <h1>welcome!</h1>
         <p>Let me show you types of art</p>
-
+<a href="#" onclick="redirectToFeedback()">fill feedback</a>
         <button onclick="redirectToRealism()">Realism</button>
         <button onclick="redirectToPaletteKnifeArt()">Palette-knife art</button>
         <button onclick="redirectToHyperRealism()">Hyper-Realism</button>
-        <a href="#" onclick="returnToLandingPage()">Go Back to Landing Page</a>
+        <a href="#" onclick="returnToLandingPage()">Go Back to button box</a>
+
+        
         <script>
+            function redirectToFeedback() {
+                window.location.href = "feedback.html";
+            }
             function redirectToRealism() {
                 window.location.href = "realism.html";
             }
@@ -22,8 +29,9 @@
                 window.location.href = "hyper-realism.html"
             }
             function returnToLandingPage() {
-                window.location.href = "index.html"
+                window.location.href = "page1.html"
             } 
         </script>
+        
     </body>
 </html>

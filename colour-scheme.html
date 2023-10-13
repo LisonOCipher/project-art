@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" type="text/css" href="all-button-files.css"
     <head>
         <title>colour-scheme</title>
     </head>
     <body>
         <h1>colour schemes</h1>
         <p>explore the art world based on colour schemes</p>
+
+        <a href="#" onclick="redirectToFeedback()">fill feedback</a>
         <button onclick="getArtByBright(`bright cool`)">bright cool scheme</button>
         <button onclick="getArtByWarm(`warm homey`)">warm homey scheme</button>
 
@@ -14,14 +17,17 @@
         <a href="#" onclick="returnToPage1()">Go back to page 1</a>
 
         <script>
-            function getArtByBright() {
+            function redirectToFeedback() {
+                window.location.href = "feedback.html";
+            }
+           function getArtByBright() {
                 window.location.href = "bright.html"
             }
             function getArtByWarm() {
                 window.location.href = "warm.html"
             }
-            function returnToColourScheme(){
-                window.location.href = "colour-scheme.html"
+            function returnToPage1(){
+                window.location.href = "page1.html"
             }
         </script>
     </body>

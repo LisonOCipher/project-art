@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="all-button-files.css"
+    <head>
+        <title> suggestion box </title>
+    </head>
+    <body>
+        <h1>We are in the suggestion box</h1>
+        <p> Here you get all the suggestions based on a group of color you like.</p>
+        
+        <input type="text" id="colorSearch" placeholder="Search for colors" oninput="searchColors()">
+    
+        <a href="#" onclick="redirectToFeedback()">fill feedback</a>
+        <button onclick="redirectToRedSugg()">red, orange, yellow, terracotta, coral, gold</button>
+        <button onclick="redirectToBlueSugg()">blue, green, purple, turquoise, teal, lavender, steel grey</button>
+        <button onclick="redirectToEarthSugg()">brown, beige, terracotta, tan, sienna, mustard</button>
+    <a href="#" onclick="returnToPage1()">go back to button box</a>
+        <script>
+          function searchColors() {
+            const searchInput = document.getElementById("colorSearch");
+            const buttons = document.querySelectorAll("button");
+    
+            const searchTerm = searchInput.value.toLowerCase();
+    
+            buttons.forEach((button) => {
+              const buttonLabel = button.textContent.toLowerCase();
+              if (buttonLabel.includes(searchTerm)) {
+                button.style.display = "block";
+              } else {
+                button.style.display = "none"
+                // console.log("The colour you input is not included here but be patient, we will add it soon.")
+              }
+            });
+          }
+         
+        function redirectToRedSugg() {
+            window.location.href = "redsugg.html";
+        }
+        function redirectToBlueSugg() {
+            window.location.href = "bluesugg.html";
+        }
+        function redirectToEarthSugg() {
+            window.location.href = "earthsugg.html";
+        }
+        function returnToPage1() {
+            window.location.href = "page1.html";
+        }
+        function redirectToFeedback() {
+                window.location.href = "feedback.html";
+            }
+ </script>
+
+    </body>
+</html>

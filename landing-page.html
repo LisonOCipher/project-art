@@ -1,37 +1,21 @@
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" type="text/css" href="landing.css"
+
     <head>
         <title>Landing page</title>
     </head>
 
-<div id="landing-page" style="display: none;">
+<div id="landing-page" style="display:block;">
     <h1> WELCOME TO THE HOME OF ART </h1>
     <p> Get your art here at lison create made specifically to meet your art needs. Art forge by charcoal, graphite and a whole lotta paint</p>
-    <button onclick="redirectToPage1()">Go to page 1</button>
+    <button onclick="redirectToPage1()">Go to button box</button>
     </div>
-    <div id="page1" style="display:none;">
-        <h1>welcome to the button box</h1>
-        <p>enjoy</p>
-        <button onclick="redirectToTypeOfArt()">types of art</button>
-        <button onclick="redirectToColourScheme()">colour scheme</button>
-        <button onclick="redirectToSuggestionBox()">suggestion box</button>
-    
-    <a href="#" onclick="returnToLandingPage()">go back to landing page</a>
-    
+
     <script>
-        function redirectToTypeOfArt() {
-            window.location.href = "type-of-art.html";
-        }
-        function redirectToColourScheme() {
-            window.loction.href = "colour-scheme.html";
-        }
-        function redirectToSuggestionBox() {
-            window.location.href = "suggestion-box.html";
-        }
-        function redirectToLandingPage() {
-            window.location.href = "index.html";
+        function redirectToPage1() {
+            window.location.href ="page1.html"
         }
     </script>
-    
-    </div>
+   
 </html>

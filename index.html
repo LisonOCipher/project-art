@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
     <body>
-    <script src="index.js"></script>
-    <head> lison create </head>
+    <head> 
+        <title>lison create</title> 
+<link rel="stylesheet" type="text/css" href="login_form.css">
+    </head>
     
     <body>
-<form id="loginForm" action="/login" method="POST">
+<form id="loginForm">
     <input type="text" id="username" name="username"
     placeholder="Username"></input>
     <input type="password" id="password" name="password"
@@ -14,14 +16,12 @@
  </form>
 
  <script>
-    document.addEventlistener("DOMContentLoaded", function (){
-        const loginForm = document.getElementById("loginForm");
-
-        loginForm.addEventListener("submit", function (e){
-            e.preventDefault();
+    document.getElementById(`loginForm`).addEventListener(`submit`, function(event)
+ {
+            event.preventDefault();
             window.location.href = "landing-page.html"
         });
-    });
+
  </script>
 
  </body>

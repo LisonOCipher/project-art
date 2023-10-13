@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" type="text/css" href="feedback.css">
+
     <head>
         <title>feedback Form</title>
     </head>
@@ -15,7 +17,7 @@
             rows="4" cols="50"></textarea>
             <button type="submit">Submit Feedback</button>
         </form>
-
+        <a href="#" onclick="returnToLandingPage()">go back to landing page</a>
         <script>
             document.getElementById("feedbackForm").addEventListener("submit", function(e){
                 e.preventDefault();
@@ -24,6 +26,9 @@
                 console.log("Feedbak recieved: + feedback");
                 alert("Thank you for your feedback!");
             });
+            function returnToLandingPage() {
+            window.location.href = "landing-page.html";
+        }
         </script>
     </body>
 </html>

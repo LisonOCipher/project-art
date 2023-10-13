@@ -1,0 +1,50 @@
+body {
+    background: url('https://www.jotform.com/blog/wp-content/uploads/2010/07/pixel-art-528x366.jpeg');
+
+    background-size:cover;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #6f016f;
+}
+
+#login-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10% auto;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.727);
+}
+
+form {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #9900cc; 
+}
+
+input {
+    width: 20%;
+    padding: 10px;
+    margin: 7px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    width: 60%;
+    padding: 10px;
+    background-color: #9900cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2e013d; 
+}
